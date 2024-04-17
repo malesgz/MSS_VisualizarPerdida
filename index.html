@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.6.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+
+    <title>TensorFlow.js Example</title>
+  </head>
+  <body style="font-family: Arial, Helvetica, sans-serif">
+    <h1>TensorFlow.js Example</h1>
+
+    <p>Formula: y = 2x + 6</p>
+
+    <br />
+
+    <div style="display: flex">
+      <button onclick="entrenarModelo()">Entrenar Modelo</button>
+      <input type="number" id="valor" value="" />
+      <button onclick="predecir()">Predecir</button>
+    </div>
+    <p id="info"></p>
+
+    <div id="output_field"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
